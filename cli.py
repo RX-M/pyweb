@@ -11,7 +11,8 @@ import ssl
 import socket
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect(('github.com', 443))
+# s.connect(('github.com', 443))
+s.connect(('localhost', 443))
 s = ssl.wrap_socket(s, 
                     keyfile=None, 
                     certfile=None, 
